@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>フォーム</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      padding: 5px;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <table>
+      <div>
+        <input type="date" name="example2" value="2012-02-16">
+      </div>
+      <div>
+        <input type="range" name="example" min="0" max="50" value="10" list="data1">
+      </div>
+      <div>
+        <datalist id="data1">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+        </datalist>
+      </div>
+      <div>
+        <input type="button" value="アラート実行ボタン" onclick="alert('ボタン実行された\n アラート表示します。')">
+      </div>
+    </table>
+  </form>
+</body>
+</html>
