@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>H-20 画像重ね</title>
+  <style>
+    body {
+      width: 1200px;
+    }
+    .backimg {
+      background: url(https://techup.tokyo/wp-content/uploads/2021/12/image2.jpg) no-repeat 00;
+      background-size: 70%;
+      text-align: center;
+      width: 1000px;
+      height: 500px;
+      position: relative;
+      margin: 0 100px;
+    }
+    .frontimg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="backimg">
+    <img class="frontimg" src="https://techup.tokyo/wp-content/uploads/2021/12/image1.jpg">
+  </div>
+</body>
